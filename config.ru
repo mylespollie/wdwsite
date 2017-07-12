@@ -1,12 +1,3 @@
-require 'rack/lobster'
+require "rack/jekyll"
 
-map '/health' do
-  health = proc do |env|
-    [200, { "Content-Type" => "text/html" }, ["1"]]
-  end
-  run health
-end
-
-map '/lobster' do
-  run Rack::Lobster.new
-end
+run Rack::Jekyll.new
