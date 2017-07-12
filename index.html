@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Who Does What</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="test.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<div class="featurette">
+   <div class="featurette-inner text-center">
+      <form role="form" class="search">
+         <h3 class="no-margin-top h3">
+           <div class="tab">
+            <button class="tablinks in active" id = "PeopleTab">People</button>
+            <button class="tablinks" id = "ServicesTab">Services</button>
+          </div>
+         </h3>
+         <div class="input-group input-group-lg">
+            <input type="search" id="mySearch" placeholder="Search People..." class="form-control">
+            <span class="input-group-btn">
+            <button class="btn btn-danger" type="button" id="searchButton">Search</button>
+            </span>
+         </div>
+         <!-- /input-group -->
+      </form>
+      <!-- /.max-width on this form -->
+
+   </div>
+   <!-- /.featurette-inner (display:table-cell) -->
+
+</div>
+<!-- /.featurette (display:table) -->
+
+</head>
+
+<body>
+  <div class="container">
+  </div>
+  <div class="modal fade bs-example-modal-lg" id="modalClick" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+</body>
